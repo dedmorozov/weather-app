@@ -1,0 +1,27 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:server": "npm --prefix ./server run dev",
+    "dev:client": "npm --prefix ./client run dev",
+    "build": "npm-run-all build:*",
+    "build:server": "npm --prefix ./server run build",
+    "build:client": "npm --prefix ./client run build",
+    "lint": "npm-run-all -l lint:*",
+    "lint:server": "npm --prefix ./server run lint --if-present",
+    "lint:client": "npm --prefix ./client run lint --if-present"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.97.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,18 @@
+.chip {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border-dark);
+  background: rgba(255, 255, 255, 0.04);
+  min-width: 120px;
+}
+
+.chip__label {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.chip__value {
+  font-weight: 700;
+  font-size: 18px;
+}
